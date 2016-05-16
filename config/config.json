@@ -1,0 +1,22 @@
+{
+
+    "express": {
+        "view engine": "js",
+        "view": "require:react-engine/lib/expressView",
+        "view cache": false,
+        "views": "path:./public"
+    },
+
+    "view engines": {
+        "js": {
+            "module": "react-engine/lib/server",
+            "renderer": {
+            "method": "create",
+                "arguments": [{
+                    "routes": "require:./routes/index.js",
+                    "routesFilePath": "path:./routes/index.js"
+                }]
+            }
+        }
+    }
+}

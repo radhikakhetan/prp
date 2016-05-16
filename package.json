@@ -1,0 +1,20 @@
+{
+  "name": "node-prp",
+  "version": "1.0.0",
+  "description": "prp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radhika Khetan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "brogan-paypal": "^3.0.0",
+    "express": "^4.3.0",
+    "kraken-js": "^1.0.1",
+    "react": "^0.13.3",
+    "react-engine": "^2.0.0",
+    "react-router": "^0.13.3"
+  }
+}
