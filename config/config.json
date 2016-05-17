@@ -18,5 +18,19 @@
                 }]
             }
         }
+    },
+
+    "middleware" : {
+        "appsec": {
+            "enabled": true,
+            "priority": 112,
+            "module": {
+                "name": "lusca",
+                "arguments": [{
+                        "xssProtection": false,
+                        "csrf": false
+                }]
+            }
+        }
     }
 }

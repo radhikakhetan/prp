@@ -15,7 +15,7 @@ app.use(kraken(spec));
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/', express.static(path.join(__dirname, 'public')));
+//app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.on('start', function onStart(argument) {
     app.listen(port, function (err) {
@@ -23,7 +23,6 @@ app.on('start', function onStart(argument) {
             console.error(err.message);
         } else {
             console.log('server started');
-            console.log(app);
         }
     });
 });
